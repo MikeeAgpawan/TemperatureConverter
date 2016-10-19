@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" type="text/css" href="TemperatureConverterCSS.css">
+</head>
+<body background="flower1.jpg">
+<script></script>
+<h1 align="center"> Temperature Converter </h1>
+<p>Please insert a number for conversion: </p>
+
+<!--Celsius-->
+<fieldset>
+<legend> Celsius </legend>
+<input id="celsius" onkeyup="convert('C')">
+<label for="celsius"> Degrees Celsius </label>
+
+<br>
+
+<img src="http://sr.photos1.fotosearch.com/bthumb/CSP/CSP993/k15580765.jpg"
+height="100"
+width="100">
+
+</fieldset>
+
+<!--fahrenheit-->
+<fieldset>
+<legend> Fahrenheit </legend>
+<input id="fahrenheit" onkeyup="convert('F')">
+<label for="fahrenheit"> Degrees Fahrenheit </label>
+
+<br>
+
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNn6l74syhXGDsbAbo3dwwIu2nesdpe0FTa6QCHsI78g1VvdlPLg"
+height="100"
+width="100">
+
+</fieldset>
+
+<!--Bottom Note-->
+<p>Note that the
+    <b>Math.round()</b> method is used, so that the result will be returned as an integer.</p>
+
+<script>
+    function convert(degree) {
+        var x;
+        if (degree == "C") {
+            x = document.getElementById("c").value * 9 / 5 + 32;
+            document.getElementById("f").value = Math.round(x);
+        } else {
+            x = (document.getElementById("f").value -32) * 5 / 9;
+            document.getElementById("c").value = Math.round(x);
+        }
+    }
+</script>
+
+</body>
+</html>
