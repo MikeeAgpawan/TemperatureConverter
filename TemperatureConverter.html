@@ -5,20 +5,32 @@
     <title>Temperature Converter</title>
     <link rel="stylesheet" type="text/css" href="TemperatureConverterCSS.css">
 </head>
-<body background="flower1.jpg">
+<body background="https://67.media.tumblr.com/62d81463a32a0c5ded25deb6cc715003/tumblr_nhz0h1jUYh1u2mm6ao1_500.jpg">
 <script></script>
+
+<fieldset class="title">
 <h1 align="center"> Temperature Converter </h1>
-<p>Please insert a number for conversion: </p>
+<p align="center">Please insert a number for conversion </p>
+</fieldset>
 
 <!--Celsius-->
 <fieldset>
-<legend> Celsius </legend>
+<legend align="center"> Celsius </legend>
 <input id="celsius" onkeyup="convert('C')">
 <label for="celsius"> Degrees Celsius </label>
 
 <br>
+<br>
 
-<img src="http://sr.photos1.fotosearch.com/bthumb/CSP/CSP993/k15580765.jpg"
+<img src="http://blog.propertypal.com/wp-content/uploads/2014/04/lace-flower-pots.jpg"
+height="100"
+width="100">
+
+<img src="https://65.media.tumblr.com/c8ef336019264526f2fd3f3f7884bd94/tumblr_o3l74cEIiw1tsxqwyo1_500.jpg"
+height="100"
+width="100">
+
+<img src="https://66.media.tumblr.com/074b3a33e46721311f7169c4e91445b6/tumblr_inline_mnrulj3YoV1qz4rgp.jpg"
 height="100"
 width="100">
 
@@ -26,33 +38,32 @@ width="100">
 
 <!--fahrenheit-->
 <fieldset>
-<legend> Fahrenheit </legend>
+<legend align="center"> Fahrenheit </legend>
 <input id="fahrenheit" onkeyup="convert('F')">
 <label for="fahrenheit"> Degrees Fahrenheit </label>
 
 <br>
+<br>
 
-<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNn6l74syhXGDsbAbo3dwwIu2nesdpe0FTa6QCHsI78g1VvdlPLg"
+<img src="http://i.gardenoholic.com/2016/04/cool-garden-benches-for-any-outdoor-decor-style-14.jpg"
+height="100"
+width="100">
+
+<img src="http://67.media.tumblr.com/d39c24ea694c4fdd7375924a93b53eb4/tumblr_noxsfosg2J1qfyazlo1_500.jpg"
+height="100"
+width="100">
+
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS503CfDdbsuPCqTb44Pt2SRpHdN6qb9npnuVC0HMJj_wSu-MyA"
 height="100"
 width="100">
 
 </fieldset>
 
 <!--Bottom Note-->
-<p>Note that the
+<p align="center">Note that the
     <b>Math.round()</b> method is used, so that the result will be returned as an integer.</p>
 
-<script>
-    function convert(degree) {
-        var x;
-        if (degree == "C") {
-            x = document.getElementById("c").value * 9 / 5 + 32;
-            document.getElementById("f").value = Math.round(x);
-        } else {
-            x = (document.getElementById("f").value -32) * 5 / 9;
-            document.getElementById("c").value = Math.round(x);
-        }
-    }
+<script src="TemperatureConverter.js">
 </script>
 
 </body>
