@@ -1,25 +1,37 @@
-
-
 body {
-background-color: #E8D6CB;
-    padding: 50px 50px 50px 50px;
+    padding: 75px 150px 150px 150px;
 }
 
 fieldset {
+
 background-color: mistyrose;
 
-    padding:20px 20px 20px 20px;
+border: thick aliceblue ridge;
+
+padding:10px 10px 10px 10px;
+
+text-align: center;
+
+}
+
+fieldset.title {
+
+background-color: #D2D6EF;
+
+border: thick aliceblue ridge;
+
+text-align: center;
 
 }
 
 h1 {
-color: #5D2E46;
+color: #676161;
 }
 
 img {
-    float: right;
+align-content: center;
 }
 
-input
+
 
 
